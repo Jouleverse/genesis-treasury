@@ -26,7 +26,7 @@ All about Jouleverse GT(Genesis Treasury) and tokenomics.
 
 ## Financial Records
 
-释放情况（202210-202312）：
+释放情况（202210-202401）：
 
  x | 月数 | 理论释放量(J) | 实际支出(J)
 -|-|-|-
