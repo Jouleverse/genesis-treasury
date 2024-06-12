@@ -14,7 +14,16 @@ All about Jouleverse GT(Genesis Treasury) and tokenomics.
 起止日期 | m/n | 多签人
 -|-|-
 2022.10-2023.9 | 2/3 | 教链，一痕，Jacky
-2023.10-至今 | 3/5 | 教链，一痕，Jacky，Koant，谢勇
+2023.10-2024.6 | 3/5 | 教链，一痕，Jacky，Koant，谢勇
+2024.6- | 3/5 | 教链，Jacky，Koant，谢勇，Jeff
+
+**多签人** | **多签人权限地址**
+-|-
+教链 | 0xB313C0de794F530Ab08e0a71C31Ee022e875Fe76
+Jacky | 0xA2029982158382E5f60E7df51593a6309Bc9Ba1c
+Koant | 0x3bD7F1E5C4b059a85a7b2F0a91934fB6A28e7104
+谢勇 | 0xb23823CBE3962aed787fAfbc2a5B907c0F4d1489
+Jeff | 0x5d1CA5f6506272A81BEdB830a47981ad73eE21BB
 
 ## Tokenomics
 
