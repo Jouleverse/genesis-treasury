@@ -31,9 +31,9 @@ Jeff | 0x5d1CA5f6506272A81BEdB830a47981ad73eE21BB
 
 1. 创世总量1000亿J(Joule)。
 2. 线性释放，每月固定解锁6000万J（一年12个月即7.2亿J/年）。简单计算可知，全部释放完成大约需要138.88年（超过两个康波周期）。
-3. 每月释放量按照二八原则拆分为两个部分：核心激励（core incentives）20%，即每月1200万J；生态基金（eco-fund）80%，即每月4800万J。目标是以20%的核心工作，撬动80%的生态发展。
+3. 每月释放量按照二八原则拆分为两个部分：核心激励（core incentives）20%，即每月1200万J；生态发展（ecosystem development）80%，即每月4800万J。目标是以20%的核心工作，撬动80%的生态发展。
 4. 20%的核心激励部分采取强制空投（类似BTC的“区块奖励”）的刚性支出方式（逐月），用于激励核心项目（core projects），实行PoWh按劳分配原则（类似BTC的按算力比例分配区块奖励）。有关PoWh，参考[workspace repo](https://github.com/Jouleverse/workspace)。
-5. 80%的生态基金部分采取治理使用的灵活支出方式，用于资助生态项目（ecosystem projects），实行具备投票权的社区成员链上投票表决的集体决策原则。具体参考ecofund的有关内容（建设中）——参见[首支生态基金ecofund1](https://github.com/Jouleverse/ecofund1)。未支出的资金则继续保留在生态基金里。
+5. 80%的生态发展部分采取治理使用的按需支出方式，用于资助生态项目（ecosystem projects），实行具备投票权的社区成员链上投票表决的集体决策原则。具体参考ecofund的有关内容（建设中）——参见[首支生态基金ecofund1](https://github.com/Jouleverse/ecofund1)。未支出的资金则继续保留在生态基金里。
 
 ## Financial Records
 
