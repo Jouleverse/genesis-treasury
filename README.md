@@ -13,7 +13,7 @@ All about Jouleverse GT(Genesis Treasury) and tokenomics.
 管理方法：多签合约，社区共管 + 时间锁
 
 里程碑：
-- 2025.5.15：全部Joule完成迁移，从GT迁移到两个时间锁合约中，严格按照Joulenomics（焦耳经济学）释放/解锁，彻底杜绝了多签人的干预可能性
+- 2025.4.15：全部Joule完成迁移，从GT迁移到两个时间锁合约中，严格按照Joulenomics（焦耳经济学）释放/解锁，彻底杜绝了多签人的干预可能性
 
 多签变更历史：
 起止日期 | m/n | 多签人
