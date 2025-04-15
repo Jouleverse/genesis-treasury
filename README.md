@@ -10,7 +10,10 @@ All about Jouleverse GT(Genesis Treasury) and tokenomics.
 - timelock core: 0x628beb88dD440A8c5e4cC89Ab33a041f521e4323
 - timelock eco: 0xbb6b53Fadf85B73258cb6A54F1343Ac4D5F99773
 
-管理方法：多签合约，社区共管
+管理方法：多签合约，社区共管 + 时间锁
+
+里程碑：
+- 2025.5.15：全部Joule完成迁移，从GT迁移到两个时间锁合约中，严格按照Joulenomics（焦耳经济学）释放/解锁，彻底杜绝了多签人的干预可能性
 
 多签变更历史：
 起止日期 | m/n | 多签人
@@ -30,27 +33,27 @@ Jeff | 0x5d1CA5f6506272A81BEdB830a47981ad73eE21BB
 ## Tokenomics
 
 1. 创世总量1000亿J(Joule)。
-2. 线性释放，每月固定解锁6000万J（一年12个月即7.2亿J/年）。简单计算可知，全部释放完成大约需要138.88年（超过两个康波周期）。
+2. 线性释放，每月固定解锁6000万J（一年12个月即7.2亿J/年）。简单计算可知，全部释放完成大约需要138.88年（超过两个康波周期）。释放速度由无人干预的时间锁合约控制。
 3. 每月释放量按照二八原则拆分为两个部分：核心激励（core incentives）20%，即每月1200万J；生态发展（ecosystem development）80%，即每月4800万J。目标是以20%的核心工作，撬动80%的生态发展。
-4. 20%的核心激励部分采取强制空投（类似BTC的“区块奖励”）的刚性支出方式（逐月），用于激励核心项目（core projects），实行PoWh按劳分配原则（类似BTC的按算力比例分配区块奖励）。有关PoWh，参考[workspace repo](https://github.com/Jouleverse/workspace)。
-5. 80%的生态发展部分采取治理使用的按需支出方式，用于资助生态项目（ecosystem projects），实行具备投票权的社区成员链上投票表决的集体决策原则。具体参考ecofund的有关内容（建设中）——参见[首支生态基金ecofund1](https://github.com/Jouleverse/ecofund1)。未支出的资金则继续保留在生态基金里。
+4. 20%的核心激励部分采取（由core自主决定）强制空投（类似BTC的“区块奖励”）的刚性支出方式（逐月），用于激励核心项目（core projects），实行PoWh按劳分配原则（类似BTC的按算力比例分配区块奖励）。有关PoWh，参考[workspace repo](https://github.com/Jouleverse/workspace)。
+5. 80%的生态发展部分采取由社区共同投票治理使用的按需支出方式，用于资助生态项目（ecosystem projects），实行具备投票权的社区成员链上投票表决的集体决策原则。具体参考ecofund的有关内容（建设中）——参见[首支生态基金ecofund1](https://github.com/Jouleverse/ecofund1)。未支出的资金则继续保留在生态时间锁里。
 
 ## Financial Records
 
-最后更新时间：2025.3.18
-
-释放情况（202210-202502）：
+Joule释放情况（202210-现在）：
 
  x | 月数 | 已释放(J) | 已支出(J)
 -|-|-|-
-核心激励 | 30 | 3.48亿[1] | 2.76亿[3]
-生态发展 | 30 | 13.92亿[2] | 7200万[4]
-总计 | 30 | 17.4亿 | 3.48亿
+核心激励 | n | [1] | [3]
+生态发展 | n | [2] | [4]
+总计 | n | 当前宇宙总能量[5] | 流动中的能量[6]
 
 - [1] 与链上timelock core合约released之数值相等（链上算法是后置释放，也就是进入7月份才释放6月份的预算）
 - [2] 与链上timelock eco合约released之数值相等（算法同上）
-- [3] 应与链上timelock core合约used之数值相等（试运行ok后调整）
-- [4] 应与链上timelock eco合约used之数值相等（试运行ok后调整）
+- [3] 应与链上timelock core合约used之数值相等
+- [4] 应与链上timelock eco合约used之数值相等
+- [5] 请查看区块链浏览器中的实时数值
+- [6] 请查看区块链浏览器中的实时数值
 
 对账记录：
 
@@ -77,6 +80,7 @@ GT创世金库多签：
 2024.6.20  | GT:30 | 核心激励预算202405-07 | 多签 -> timelock core | -36,000,000 | 99,663,999,890 | Y | 试运行timelock core
 2024.7.26 | x | 归还 | 教链 -> GT | +110 | 99,664,000,000 | Y | 归还2022.10.1测试50J；代Jacky归还2022.10.1测试50J；代2023.6.28参与测试10人归还10J；总共归还110J
 2024.11.19 | GT:44 | 核心激励剩余全部预算锁定 | 多签 -> timelock core | -19,736,000,000 | 79,928,000,000 | Y | [迁移计划](https://github.com/Jouleverse/governance/blob/master/README.md)
+2025.4.15 | GT:53 | 生态发展剩余全部预算锁定 | 多签 -> timelock eco | -79,928,000,000 | 0 | Y | [迁移计划](https://github.com/Jouleverse/governance/blob/master/README.md)
 
 timelock核心：
 时间 | 事务序号 | 目的 | 转账方向 | 增减数量(J) | 变动后余额(J) | 链上对账一致(Y/N) | 备注
@@ -86,7 +90,11 @@ timelock核心：
 2024.8.15 | GT:39 | 核心激励预算202406 | timelock core -> 谢勇(代) | -12,000,000 | 12,000,000 | Y | -
 2024.10.14 | GT:41 | 核心激励预算202407 | timelock core -> Jeff(代) | -12,000,000 | 0 | Y | -
 2024.11.19 | GT:44 | 核心激励剩余全部预算锁定 | GT -> timelock core | +19,736,000,000 | 19,736,000,000 | Y | [迁移计划](https://github.com/Jouleverse/governance/blob/master/README.md)
+2024.11.23 | GT:47 | 核心激励预算202408 | timelock core -> Koant(代) | -12,000,000 | 19,724,000,000 | - | -
+2025.3.26 | GT:51 | 核心激励预算202409-12 | timelock core -> Koant(代) | -48,000,000 | 19,676,000,000 | Y | -
 
 timelock生态：
 时间 | 事务序号 | 目的 | 转账方向 | 增减数量(J) | 变动后余额(J) | 链上对账一致(Y/N) | 备注
 -|-|-|-|-|-|-|-
+2025.4.15 | GT:53 | 生态发展剩余全部预算锁定 | GT -> timelock eco | +79,928,000,000 | 79,928,000,000 | Y | [迁移计划](https://github.com/Jouleverse/governance/blob/master/README.md)
+
